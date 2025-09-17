@@ -23,7 +23,7 @@ Testing the webserver.
 # PROGRAM:
 '''
 from http.server import HTTPServer,BaseHTTPRequestHandler
-content ='''
+content ="""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +77,7 @@ Weight: 2.30 kg (5.07 lbs)
 </pre>
 </body>
 </html>
-'''
+"""
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
